@@ -40,7 +40,14 @@ then Negitive Sentiment and if the rating is 3 then we consider it as neutral bu
 not consider it because we need to find the Polarity(Positive/Negitive) of the review
 
 ## Project Structure
-<img src="static/image/Screenshot 2024-07-10 at 10.34.08 PM.png" height="500" />
+<img src="static/image/structure.png" height="500" />
+
+## Demo
+<img src="static/image/demo.gif" height="500" />
+
+<img src="static/image/positive.png" height="500" />
+
+<img src="static/image/negitive.png" height="500" />
 
 ### Directory and File Descriptions:
 
