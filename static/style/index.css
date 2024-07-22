@@ -1,0 +1,40 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.navbar{
+    margin-bottom: 100px;
+}
+
+body{
+    text-align: center;
+    background-image: url('/static/image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+form{
+    padding: 30px 10px 30px 10px;
+    border-radius: 2.15rem;
+    background-color: black;
+    opacity: 0.6;
+
+}
+textarea{
+    background-color: black;
+    color: white;
+    height: 384px;
+    width: 400px;
+}
+
+/* Media query for devices with a min-width of 1200px */
+@media only screen and (min-width: 1200px) {
+    textarea {
+        height: 500px;
+        width: 80%;
+    }
+}

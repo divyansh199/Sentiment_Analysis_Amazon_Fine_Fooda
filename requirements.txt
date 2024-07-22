@@ -1,0 +1,9 @@
+Pandas
+numpy
+scikit-learn
+xgboost
+flask
+spacy
+bs4
+python-dateutil
+lxml

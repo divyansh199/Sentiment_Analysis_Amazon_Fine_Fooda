@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amazon_Food_Rewiews_sentiment_Analysis</title>
+        <link rel="stylesheet" type="text/css" href="static/style/index.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid d-flex justify-content-center">
+              <span class="navbar-brand mb-0 h1 text-light">Amazon Food Review Sentiment Analysis</span>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <form action="\predict" method="POST">
+                            <textarea class='message-box' name="message" placeholder="Enter Your Review Here..." required></textarea><br/>
+                            <input type="submit" class= "btn btn-secondary mt-2" value="Predict">
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mt-5">
+                        {% if prediction %}
+                            <div>
+                                <img src="{{ prediction[0] }}" width="80%" height="80%" alt="Prediction Image" style="max-width: 833px;">
+                                <h1>{{ prediction[1] }}</h1>
+                            </div>
+                         {% endif %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer bg-body-tertiary text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center text-light p-3">
+                <span>Made with ❤️ Divyansh Waghmare</span>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </body>
+    <h1>{{ url }} </h1>
+</html>
+
