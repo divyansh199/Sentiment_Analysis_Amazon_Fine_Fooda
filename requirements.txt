@@ -6,4 +6,5 @@ flask
 spacy
 bs4
 python-dateutil
+gunicorn
 lxml
